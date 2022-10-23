@@ -1,6 +1,20 @@
-function App() {
+import { Routes, Route } from 'react-router-dom';
+import Home from './components/views/Home/Home';
+import Container from 'react-bootstrap/Container';
+import TopBar from './components/layout/TopBar/TopBar';
+import NavBar from './components/layout/NavBar/NavBar';
+
+const App = () => {
   return (
-      <h1>Hello</h1>
+    <main>
+      <Container>
+        <TopBar />
+        <NavBar/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </Container>
+    </main>
   );
 }
 

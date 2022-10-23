@@ -1,0 +1,19 @@
+@import '../../../styles/settings.scss';
+
+.root {
+  background-color: #eee;
+  text-transform: uppercase;
+  font-size: $base-size * 1.1;
+  text-decoration: none;
+  a{
+    color: #777;
+    &:hover{
+      color: #111;
+    }
+  }
+
+  &.login {
+    display: flex;
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,14 @@
+@import '../../../styles/settings.scss';
+@import '../../../styles/global.scss';
+
+.root {
+  height: 103px;
+  font-size: $base-size * 1.6;
+  text-transform: uppercase;
+  color: #000;
+  margin-top: $base-size;
+  margin-bottom: $base-size;
+  a {
+    color: #000;
+  }
+}
