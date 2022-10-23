@@ -4,7 +4,8 @@ import { BsPerson, BsTelephone, BsFillGeoAltFill, BsEnvelope } from 'react-icons
 
 const TopBar = () => {
   return (
-    <Nav className={`justify-content-end ${styles.root}`} activeKey="/">
+    <Nav className={styles.root}>
+      <div className={styles.container}>
       <Nav.Item>
         <Nav.Link href="/">
           <BsTelephone /> +48 123 123 123
@@ -25,6 +26,9 @@ const TopBar = () => {
           <BsPerson /> Login
         </Nav.Link>
       </Nav.Item>
+
+      </div>
+
     </Nav>
   );
 };

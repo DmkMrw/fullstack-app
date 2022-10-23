@@ -7,8 +7,9 @@ import NavBar from './components/layout/NavBar/NavBar';
 const App = () => {
   return (
     <main>
+              <TopBar />
       <Container>
-        <TopBar />
+
         <NavBar/>
         <Routes>
           <Route path="/" element={<Home />} />
