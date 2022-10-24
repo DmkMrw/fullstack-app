@@ -1,0 +1,28 @@
+@import '../../../styles/settings.scss';
+
+.slide {
+  position: relative;
+  z-index: 0;
+  margin-bottom: 35px;
+  &_image {
+    object-fit: cover;
+  }
+
+  .carousel_content {
+    color: #fff;
+    z-index: 1;
+  }
+}
+
+.slide:after {
+  content: '';
+  background-color: black;
+  min-height: 110px;
+  width: 100%;
+  opacity: 0.6;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
