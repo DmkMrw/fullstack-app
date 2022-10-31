@@ -9,56 +9,48 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { BsCart, BsSearch } from 'react-icons/bs';
+import NavLink from 'react-bootstrap/esm/NavLink';
+
+
 
 const NavBar = () => {
   return (
-    <Navbar expand="lg" sticky="top" className={styles.root}>
-      <Container fluid>
-        <Navbar.Brand href="#home">
+  <Container >
+    <Navbar collapseOnSelect expand="lg" className={styles.root}>
+      <Container>
+        <Navbar.Brand href="#home" className='me-5'>
           <img
             src="./images/logo.jpg"
-            alt="logo"
+            alt="brand_logo"
             className="img-fluid"
             width={'250px'}
           ></img>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse
-          id="basic-navbar-nav"
-        className='d-flex justify-content-end'>
-          <Nav className="px-5 my-2 my-lg-0">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#link">About</Nav.Link>
-            <Nav.Link href="#link">Offert</Nav.Link>
-            <Nav.Link href="#link">News</Nav.Link>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className='ms-5' >
+            <NavLink href="/">Home</NavLink>
+            <NavLink href="/about">About</NavLink>
+            <NavLink href="/offert">Offert</NavLink>
+            <NavLink href="/news">News</NavLink>
             <NavDropdown title="Categories" id="basic-nav-dropdown">
               <NavDropdown.Item href="/guns">Guns</NavDropdown.Item>
               <NavDropdown.Item href="/rifles">Rifles</NavDropdown.Item>
             </NavDropdown>
-          </Nav>
-          <Row>
-            <Col className="col-8">
-              <Form className="d-flex">
-                <Form.Control
-                  type="search"
-                  placeholder="Search"
-                  className="me-2"
-                  aria-label="Search"
-                />
-                <Button variant="outline-secondary">
-                  <BsSearch />
-                </Button>
-              </Form>
-            </Col>
-            <Col className="col-4">
-              <Button variant="outline-secondary">
-                <BsCart />
-              </Button>
-            </Col>
-          </Row>
+        </Nav>
+        <Form className="d-flex">
+            <Form.Control
+              type="search"
+              placeholder="Search"
+              className="me-2 ms-4"
+              aria-label="Search"
+            />
+            <Button variant="outline-success">Search</Button>
+          </Form>
         </Navbar.Collapse>
       </Container>
-    </Navbar>
+      </Navbar>
+    </Container>
   );
 };
 

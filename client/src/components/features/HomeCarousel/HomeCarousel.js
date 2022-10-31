@@ -9,7 +9,7 @@ const HomeCarousel = () => {
           className={'d-block w-100 ' + styles.slide_image}
           src="./images/colt.webp"
           alt="First slide"
-          height={'400px'}
+          height="500px"
         />
         <Carousel.Caption className={styles.carousel_content}>
           <h3>Colt 1911</h3>
@@ -21,7 +21,7 @@ const HomeCarousel = () => {
           className={'d-block w-100 ' + styles.slide_image}
           src="./images/glock19.webp"
           alt="Second slide"
-          height={'400px'}
+          height={'500px'}
         />
         <Carousel.Caption className={styles.carousel_content}>
           <h3>Glock 19 gen 5</h3>
@@ -33,9 +33,8 @@ const HomeCarousel = () => {
           className={'d-block w-100 ' + styles.slide_image}
           src="./images/hk416.webp"
           alt="Third slide"
-          height={'400px'}
+          height={'500px'}
         />
-
         <Carousel.Caption className={styles.carousel_content}>
           <h3>HK416</h3>
           <p>

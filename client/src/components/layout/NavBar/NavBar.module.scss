@@ -2,7 +2,7 @@
 @import '../../../styles/global.scss';
 
 .root {
-  height: 103px;
+  // height: 103px;
   font-size: $base-size * 1.6;
   text-transform: uppercase;
   color: #000;
@@ -12,3 +12,9 @@
     color: #000;
   }
 }
+
+.activeStyle {
+  color: red;
+}
+
+

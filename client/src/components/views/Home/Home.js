@@ -1,12 +1,17 @@
 import React from 'react';
-import TopBar from '../../layout/TopBar/TopBar';
+import Container from 'react-bootstrap/Container';
+import NewItems from '../NewItems/NewItems';
+
 import HomeCarousel from '../../features/HomeCarousel/HomeCarousel';
 
 const Home = () => {
   return (
     <div>
       <HomeCarousel />
-      <h1>Ofera</h1>
+      <Container>
+        <NewItems />
+      </Container>
+
     </div>
   );
 };
