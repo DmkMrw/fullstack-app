@@ -1,9 +1,10 @@
 /* selectors */
-export const getAll = ({ cart }) => cart.products;
+export const getAllProducts = (state) => state.products;
+export const getBrandNewProducts = (state) => state.products.filter(product => product.brandNew === true);
 export const getCount = ({ cart }) => cart.products.length;
 
 /* action name creator */
-const reducerName = 'cart';
+const reducerName = 'product';
 const createActionName = (name) => `app/${reducerName}/${name}`;
 
 /* action types */
@@ -13,7 +14,7 @@ const ADD_PRODUCT = createActionName('ADD_PRODUCT');
 export const addProduct = (payload) => ({ payload, type: ADD_PRODUCT });
 
 /* reducer */
-function cartReducer(statePart = [], action = {}) {
+function productReducer(statePart = [], action = {}) {
   switch (action.type) {
     case ADD_PRODUCT: {
       return {
@@ -26,4 +27,4 @@ function cartReducer(statePart = [], action = {}) {
   }
 }
 
-export default cartReducer;
+export default productReducer;
