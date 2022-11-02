@@ -1,0 +1,25 @@
+.container {
+     background-image: url("./../../../../public/images/footer_background.jpg");
+     background-repeat: no-repeat;
+     width: 100%;
+     background-size: cover;
+     filter: grayscale(90%);
+     color: #fff;
+}
+
+.contact {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+.copyright {
+     width: 100%;
+     background-color: rgba(0,0,0, .7);
+     p{
+          margin-bottom: 0;
+          text-align: center;
+          padding: 5px 0;
+          color: #999;
+     }
+}
