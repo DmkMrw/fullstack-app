@@ -1,9 +1,9 @@
-import styles from './Offert.module.scss';
+import styles from './Offer.module.scss';
 import { getAllProducts } from '../../../redux/productRedux';
 import { useSelector } from "react-redux";
 import ProductCard from '../../features/ProductCard/ProductCard';
 
-const Offert = () => {
+const Offer = () => {
 
   const allProductsData = useSelector(getAllProducts);
   return (
@@ -16,4 +16,4 @@ const Offert = () => {
   );
 }
 
-export default Offert;
+export default Offer;

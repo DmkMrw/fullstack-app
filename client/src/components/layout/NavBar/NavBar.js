@@ -31,7 +31,7 @@ const NavBar = () => {
           <Nav className='ms-5' >
             <NavLink href="/">Home</NavLink>
             <NavLink href="/about">About</NavLink>
-            <NavLink href="/offert">Offert</NavLink>
+            <NavLink href="/offer">Offer</NavLink>
             <NavLink href="/news">News</NavLink>
             <NavDropdown title="Categories" id="basic-nav-dropdown">
               <NavDropdown.Item href="/guns">Guns</NavDropdown.Item>
