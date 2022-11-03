@@ -6,6 +6,7 @@ import NavBar from './components/layout/NavBar/NavBar';
 import About from './components/views/About/About';
 import HomeCarousel from './components/features/HomeCarousel/HomeCarousel';
 import Footer from './components/layout/Footer/Footer';
+import Rifles from './components/views/Rifles/Rifles';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/rifles" element={<Rifles />} />
         </Routes>
       <Footer />
     </main>

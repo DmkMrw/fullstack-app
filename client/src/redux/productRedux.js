@@ -2,6 +2,7 @@
 export const getAllProducts = (state) => state.products;
 export const getBrandNewProducts = (state) => state.products.filter(product => product.brandNew === true);
 export const getCount = ({ cart }) => cart.products.length;
+export const getAllRifles = (state) => state.products.filter(product => product.type === 'Rifle');
 
 /* action name creator */
 const reducerName = 'product';

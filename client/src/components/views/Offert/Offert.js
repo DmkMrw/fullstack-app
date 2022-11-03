@@ -10,9 +10,8 @@ const Offert = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>All products</h1>
       <div className={styles.products_container}>
-        {allProductsData.map(product => <ProductCard key={product.id} name={product.name} type={product.type} price={product.price} image={product.image} />)}
+        {allProductsData.map(product => <ProductCard key={product.id} name={product.name} type={product.type} price={product.price} image={product.image} id={product.id} />)}
       </div>
-
     </div>
   );
 }
