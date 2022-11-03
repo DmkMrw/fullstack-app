@@ -7,6 +7,7 @@ import About from './components/views/About/About';
 import HomeCarousel from './components/features/HomeCarousel/HomeCarousel';
 import Footer from './components/layout/Footer/Footer';
 import Rifles from './components/views/Rifles/Rifles';
+import Guns from './components/views/Guns/Guns';
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/rifles" element={<Rifles />} />
+          <Route path="/guns" element={<Guns />} />
         </Routes>
       <Footer />
     </main>
