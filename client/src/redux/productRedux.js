@@ -4,6 +4,7 @@ export const getBrandNewProducts = (state) => state.products.filter(product => p
 export const getCount = ({ cart }) => cart.products.length;
 export const getAllRifles = (state) => state.products.filter(product => product.type === 'Rifle');
 export const getAllGuns = (state) => state.products.filter(product => product.type === 'Gun');
+export const getItemById = (state, id) => state.products.find(product => product.id == id);
 
 /* action name creator */
 const reducerName = 'product';

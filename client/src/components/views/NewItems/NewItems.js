@@ -15,10 +15,8 @@ const NewItems = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>Brand New</h1>
       <div className={styles.product_container}>
-      {brandNewProductsData.map(product => <ProductCard key={product.id} name={product.name} type={product.type} price={product.price} image={product.image} />)}
-
+        {brandNewProductsData.map(product => <ProductCard key={product.id} name={product.name} type={product.type} price={product.price} image={product.image} id={product.id} />)}
       </div>
-
     </div>
   );
 }

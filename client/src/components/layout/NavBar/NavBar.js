@@ -18,7 +18,7 @@ const NavBar = () => {
   <Container >
     <Navbar collapseOnSelect expand="lg" className={styles.root}>
       <Container>
-        <Navbar.Brand href="#home" className='me-5'>
+        <Navbar.Brand href="/" className='me-5'>
           <img
             src="./images/logo.jpg"
             alt="brand_logo"

@@ -20,7 +20,7 @@ const ProductCard = ({
   return (
     <Card style={{ height: '100%' }} className={styles.card_wrapper}>
       <Card.Img variant="top" src={image} className={styles.image} />
-      <Card.Body>
+      <Card.Body className={styles.card_body}>
         <Row>
           <Col className={'mb-3 ' + styles.label}>
             {outOfStock && (

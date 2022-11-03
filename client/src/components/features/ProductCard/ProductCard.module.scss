@@ -2,12 +2,24 @@
 
 .card_wrapper {
   border: none;
-  width: 22%;
+  width: 380px;
+  z-index: 4;
+  display: flex;
+  align-items: center;
 
   .image {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
     object-fit: contain;
+    margin-top: 17px;
+    transition: transform .5s;
+    &:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  }
+  .card_body{
+    padding: 0px 0px 10px 0px;
   }
 
   .categories_text {
@@ -52,3 +64,26 @@
     text-decoration: line-through;
   }
 }
+
+// @media (max-width: 963px){
+//     .card_wrapper {
+//     border: none;
+//     width: 285px;
+//   }
+// }
+
+
+// @media (max-width: 950px){
+//     .card_wrapper {
+//     border: none;
+//     width: 350px;
+//   }
+// }
+
+
+// @media (max-width: 780px){
+//     .card_wrapper {
+//     border: none;
+//     width: 285px;
+//   }
+// }

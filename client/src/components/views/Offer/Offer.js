@@ -6,6 +6,7 @@ import ProductCard from '../../features/ProductCard/ProductCard';
 const Offer = () => {
 
   const allProductsData = useSelector(getAllProducts);
+
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>All products</h1>

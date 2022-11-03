@@ -8,6 +8,7 @@ import Rifles from './components/views/Rifles/Rifles';
 import Guns from './components/views/Guns/Guns';
 import Offer from './components/views/Offer/Offer';
 import News from './components/views/News/News';
+import ProductPage from './components/views/ProductPage/ProductPage';
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="/guns" element={<Guns />} />
           <Route path="/offer" element={<Offer />} />
           <Route path="/news" element={<News />} />
+          <Route path="/product/:id" element={<ProductPage />} />
         </Routes>
       <Footer />
     </main>
