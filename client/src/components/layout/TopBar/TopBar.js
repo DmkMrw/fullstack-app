@@ -1,6 +1,6 @@
 import Nav from 'react-bootstrap/Nav';
 import styles from './TopBar.module.scss';
-import { BsPerson, BsTelephone, BsFillGeoAltFill, BsEnvelope } from 'react-icons/bs';
+import { BsPerson, BsTelephone, BsFillGeoAltFill, BsEnvelope, BsFillPersonPlusFill } from 'react-icons/bs';
 
 const TopBar = () => {
   return (
@@ -22,11 +22,15 @@ const TopBar = () => {
         </Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link eventKey="disabled">
+        <Nav.Link href="/login" eventKey="disabled">
           <BsPerson /> Login
         </Nav.Link>
       </Nav.Item>
-
+      <Nav.Item>
+        <Nav.Link href="/register" eventKey="disabled">
+          <BsFillPersonPlusFill /> Register
+        </Nav.Link>
+      </Nav.Item>
       </div>
 
     </Nav>

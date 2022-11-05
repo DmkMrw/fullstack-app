@@ -9,6 +9,7 @@ import Guns from './components/views/Guns/Guns';
 import Offer from './components/views/Offer/Offer';
 import News from './components/views/News/News';
 import ProductPage from './components/views/ProductPage/ProductPage';
+import Login from './components/views/Login/Login';
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/offer" element={<Offer />} />
           <Route path="/news" element={<News />} />
           <Route path="/product/:id" element={<ProductPage />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       <Footer />
     </main>
