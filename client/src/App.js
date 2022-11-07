@@ -10,6 +10,7 @@ import Offer from './components/views/Offer/Offer';
 import News from './components/views/News/News';
 import ProductPage from './components/views/ProductPage/ProductPage';
 import Login from './components/views/Login/Login';
+import Register from './components/views/Register/Register';
 
 const App = () => {
   return (
@@ -24,7 +25,8 @@ const App = () => {
           <Route path="/offer" element={<Offer />} />
           <Route path="/news" element={<News />} />
           <Route path="/product/:id" element={<ProductPage />} />
-          <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register/>} />
         </Routes>
       <Footer />
     </main>

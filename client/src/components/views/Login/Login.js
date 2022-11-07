@@ -13,7 +13,7 @@ const Login = () => {
   };
 
   return (
-    <Form className="col-12 col-md-4 mx-auto my-5 pb-5 ps-5 pe-5 " onSubmit={handleSubmit}>
+    <Form className="col-12 col-md-4 mx-auto my-5 pb-5" onSubmit={handleSubmit}>
       <h1 className="my-4">Sign in</h1>
       <p className="mb-3">
         Use your <b>Login</b> and <b>Password</b> to Sign in.
