@@ -12,9 +12,9 @@ import NavLink from 'react-bootstrap/esm/NavLink';
 
 const NavBar = () => {
   return (
-  <Container >
-    <Navbar collapseOnSelect expand="lg" className={styles.root}>
-      <Container>
+    <div className={styles.allContainer}>
+      <Container className={styles.test}>
+        <Navbar collapseOnSelect expand="lg" className={styles.root}>
         <Navbar.Brand href="/" className='me-5'>
           <img
             src="./images/logo.jpg"
@@ -34,20 +34,20 @@ const NavBar = () => {
               <NavDropdown.Item href="/guns">Guns</NavDropdown.Item>
               <NavDropdown.Item href="/rifles">Rifles</NavDropdown.Item>
             </NavDropdown>
-        </Nav>
-        <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2 ms-4"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-        </Navbar.Collapse>
+          </Nav>
+          <Form className="d-flex">
+              <Form.Control
+                type="search"
+                placeholder="Search"
+                className="me-2 ms-4"
+                aria-label="Search"
+              />
+              <Button variant="secondary">Search</Button>
+            </Form>
+          </Navbar.Collapse>
+        </Navbar>
       </Container>
-      </Navbar>
-    </Container>
+    </div>
   );
 };
 
