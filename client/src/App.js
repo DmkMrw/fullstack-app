@@ -11,6 +11,7 @@ import News from './components/views/News/News';
 import ProductPage from './components/views/ProductPage/ProductPage';
 import Login from './components/views/Login/Login';
 import Register from './components/views/Register/Register';
+import NotFound from './components/views/NotFound/NotFound';
 
 const App = () => {
   return (
@@ -26,7 +27,8 @@ const App = () => {
         <Route path="/news" element={<News />} />
         <Route path="/product/:id" element={<ProductPage />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register/>} />
+        <Route path="/register" element={<Register />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
     </main>
