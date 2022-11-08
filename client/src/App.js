@@ -16,18 +16,18 @@ const App = () => {
   return (
     <main>
       <TopBar />
-        <NavBar/>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/rifles" element={<Rifles />} />
-          <Route path="/guns" element={<Guns />} />
-          <Route path="/offer" element={<Offer />} />
-          <Route path="/news" element={<News />} />
-          <Route path="/product/:id" element={<ProductPage />} />
+      <NavBar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/rifles" element={<Rifles />} />
+        <Route path="/guns" element={<Guns />} />
+        <Route path="/offer" element={<Offer />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/product/:id" element={<ProductPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register/>} />
-        </Routes>
+      </Routes>
       <Footer />
     </main>
   );

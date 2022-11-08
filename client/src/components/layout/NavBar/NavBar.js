@@ -13,18 +13,18 @@ import NavLink from 'react-bootstrap/esm/NavLink';
 const NavBar = () => {
   return (
     <div className={styles.allContainer}>
-      <Container className={styles.test}>
+      <Container>
         <Navbar collapseOnSelect expand="lg" className={styles.root}>
         <Navbar.Brand href="/" className='me-5'>
           <img
             src="./images/logo.jpg"
             alt="brand_logo"
             className="img-fluid"
-            width={'250px'}
+            width={'200px'}
           ></img>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+        <Navbar.Collapse id="responsive-navbar-nav" className={styles.NavbarFlex}>
           <Nav className='ms-5' >
             <NavLink href="/">Home</NavLink>
             <NavLink href="/about">About</NavLink>

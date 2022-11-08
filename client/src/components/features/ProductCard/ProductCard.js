@@ -5,7 +5,7 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { BiGlassesAlt } from 'react-icons/bi';
-// import StarsRating from '../StarsRating/StarsRating';
+
 
 const ProductCard = ({
   id,
@@ -15,7 +15,6 @@ const ProductCard = ({
   brandNew,
   outOfStock,
   image,
-  // starsRating,
 }) => {
   return (
     <Card style={{ height: '100%' }} className={styles.card_wrapper}>
@@ -36,7 +35,6 @@ const ProductCard = ({
             <span>${price}</span>
         </Card.Text>
         <div className="d-flex justify-content-center">
-          {/* <StarsRating stars={starsRating} /> */}
         </div>
         <Link to={'/product/' + id}>
           <Button variant="outline-secondary" size="sm" className="mx-1 mb-1">

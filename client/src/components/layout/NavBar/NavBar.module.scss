@@ -22,7 +22,17 @@
   background-color: #fff;
   padding: 0;
   box-shadow: 0px 5px 9px -8px rgba(66, 68, 90, 1);
-
 }
 
+@media(min-width:992px){
+  .NavbarFlex {
+    display: flex;
+    justify-content: center;
+  }
+}
 
+@media(max-width:992px){
+  .allContainer {
+    position:static;
+  }
+}
